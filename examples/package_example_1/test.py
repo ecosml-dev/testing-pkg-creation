@@ -11,9 +11,11 @@ from pandas import read_csv
 from pandas.testing import assert_frame_equal
 
 # import the transform functions
-from transform.normalize import transform
+# TODO: uncomment if you have a transform for this example
+# from transform.normalize import transform
 
 # import the main package module model 
+# TODO: rename to your package
 import testing_pkg_creation.main.model as model
 
 # helper function to load example inputs from input folder
@@ -25,16 +27,20 @@ class TestPackage(unittest.TestCase):
 
   def setUp(self):
     # load your example spectra from the inputs folder
-    self.spectra = load('ExampleSpectra.csv')
+    # TODO: rename to whatever your spectra file is called
+    self.spectra = load('ExampleInputSpectra.csv')
 
   def test_model(self):
     # Assert your transform fuction workers
-    self.spectra = transform(self.spectra)
-    assert_frame_equal(self.spectra, load('ExampleSpectra_Normalized.csv', 'output'))
+    # TODO: uncomment if you have a transform for this example
+    # self.spectra = transform(self.spectra)
+    # TODO: rename to normalized spectra example file in output folder
+    # assert_frame_equal(self.spectra, load('ExampleSpectra_Normalized.csv', 'output'))
 
     # actually run the model
     result = model.run(self.spectra)
     # assert the model gives the desired results
+    # TODO: rename to output spectra CSV file
     assert_frame_equal(result, load('ExampleOutput_Predictions.csv', 'output'))
 
 if __name__ == '__main__':

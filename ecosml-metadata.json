@@ -2,7 +2,9 @@
   "id": "a908a818-5767-4f3a-a34e-226ef2f0f0a7",
   "name": "testing-pkg-creation",
   "overview": "testing of the creation of a pkg",
-  "keywords": [],
+  "keywords": [
+    "test"
+  ],
   "theme": "",
   "family": "",
   "specific": "",
