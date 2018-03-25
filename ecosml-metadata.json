@@ -3,7 +3,8 @@
   "name": "testing-pkg-creation",
   "overview": "testing of the creation of a pkg",
   "keywords": [
-    "test"
+    "test",
+    "another"
   ],
   "theme": "",
   "family": "",

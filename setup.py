@@ -10,7 +10,7 @@ setup(
     author = "jrmerz",
     description = ("testing of the creation of a pkg"),
     license = "MIT",
-    keywords = "test",
+    keywords = "test another",
     url = "http://localhost:3000/package/a908a818-5767-4f3a-a34e-226ef2f0f0a7",
     packages=[
         'testing_pkg_creation',
