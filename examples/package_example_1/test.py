@@ -12,7 +12,7 @@ from pandas.testing import assert_frame_equal
 
 # import the transform functions
 # TODO: uncomment if you have a transform for this example
-# from transform.normalize import transform
+from transform.normalize import transform
 
 # import the main package module model 
 # TODO: rename to your package
@@ -28,14 +28,14 @@ class TestPackage(unittest.TestCase):
   def setUp(self):
     # load your example spectra from the inputs folder
     # TODO: rename to whatever your spectra file is called
-    self.spectra = load('ExampleInputSpectra.csv')
+    self.spectra = load('ExampleSpectra.csv')
 
   def test_model(self):
     # Assert your transform fuction workers
     # TODO: uncomment if you have a transform for this example
-    # self.spectra = transform(self.spectra)
+    self.spectra = transform(self.spectra)
     # TODO: rename to normalized spectra example file in output folder
-    # assert_frame_equal(self.spectra, load('ExampleSpectra_Normalized.csv', 'output'))
+    assert_frame_equal(self.spectra, load('ExampleSpectra_Normalized.csv', 'output'))
 
     # actually run the model
     result = model.run(self.spectra)
