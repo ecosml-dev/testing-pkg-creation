@@ -6,9 +6,18 @@
     "test",
     "another"
   ],
-  "theme": "chemistry",
-  "family": "",
-  "specific": "",
+  "theme": [
+    "chemistry",
+    "physiology"
+  ],
+  "family": [
+    "nitrogen",
+    "lignen",
+    "carbon"
+  ],
+  "specific": [
+    "% ADF"
+  ],
   "organization": "cstars",
   "language": "python",
   "owner": "jrmerz"
